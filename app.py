@@ -12,7 +12,7 @@ app.debug = True
 def delay():
     delay = request.args.get("delay")
     if delay:
-        time.sleep(int(delay))
+        time.sleep(float(delay))
     return "delay app"
 
 
